@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="numberList"></ul>
+
+    <script>
+        let num = [];
+        for (let i = 1; i <= 9; i++) {
+            num.push(i);
+        }
+
+        num.sort(() => Math.random() - 0.5);
+
+        // 獲取要更新的 HTML 元素
+        const numberList = document.getElementById('numberList');
+
+        // 清空列表內容
+        numberList.innerHTML = '';
+
+        // 將洗牌後的陣列資料插入到列表中
+        num.forEach((item) => {
+            const listItem = document.createElement('li');
+            listItem.textContent = item;
+            numberList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
