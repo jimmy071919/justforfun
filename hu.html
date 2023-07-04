@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/css/hu.css">
-    <title>陳冠豪女友❤️</title>
+    <title>Dropdown Button Example</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <div class="hu"><img src="image/hu.jpg" alt=""></div>
-    <h1>你怎麼那麼正阿</h1>
+    <div class="dropdown">
+        <button class="dropdown-toggle">下拉選單</button>
+        <div class="dropdown-content">
+            <a href="#">選項1</a>
+            <a href="#">選項2</a>
+            <a href="#">選項3</a>
+        </div>
+    </div>
 </body>
 </html>
